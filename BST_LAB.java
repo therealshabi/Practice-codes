@@ -8,13 +8,13 @@ public class BST_LAB
     BST_LAB left=null;
     BST_LAB right=null;
 
-    
+
     public static BST_LAB insert(BST_LAB r,int d)
     {
          if(r==null)
         {
           r =new BST_LAB();
-          r.data=d;  	
+          r.data=d;
         }
         else
         {
@@ -25,8 +25,8 @@ public class BST_LAB
              if(d>r.data)
              {
              	r.right=insert(r.right,d);
-             }	
-            }		
+             }
+            }
         }
 
         return r;
@@ -53,7 +53,7 @@ public class BST_LAB
        if(root.right!=null)
        	inorder(root.right);
     }
-    
+
     public static void mirror(BST_LAB root)
     {
         BST_LAB temp=null;
